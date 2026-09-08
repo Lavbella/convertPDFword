@@ -1,0 +1,15 @@
+python -m venv venv  
+.\venv\Scripts\activate
+deactivate  
+
+pip install --upgrade pip
+python.exe -m pip install --upgrade pip
+pip install streamlit pdf2docx
+
+pyinstaller --name=ConvertPDFWordApp run_app.py
+streamlit run app.py    
+
+
+.\venv\Scripts\pyinstaller run_app.spec --clean
+ou
+pyinstaller run_app.spec --clean
